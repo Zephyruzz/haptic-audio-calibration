@@ -1,0 +1,32 @@
+[
+  {
+    "freq_low": 20,
+    "freq_high": 200,
+    "feeling": "rough, gravelly, in your gut",
+    "pattern": "STRONG_SLOW_PULSE"
+  },
+  {
+    "freq_low": 200,
+    "freq_high": 500,
+    "feeling": "smooth, rounded",
+    "pattern": "STEADY_MEDIUM_VIBE"
+  },
+  {
+    "freq_low": 500,
+    "freq_high": 2000,
+    "feeling": "sharp, bright, pointed",
+    "pattern": "SHORT_SHARP_TAP"
+  },
+  {
+    "freq_low": 2000,
+    "freq_high": 8000,
+    "feeling": "thin, glassy, high in the chest",
+    "pattern": "FAST_LIGHT_FLUTTER"
+  },
+  {
+    "freq_low": 8000,
+    "freq_high": 20000,
+    "feeling": "not yet mapped",
+    "pattern": "UNMAPPED_HIGH"
+  }
+]
