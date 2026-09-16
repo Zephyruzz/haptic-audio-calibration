@@ -9,7 +9,7 @@ Fill in the bracketed fields before sharing it.
 |---|---|
 | Inventor(s) | *[Mannan Vishal Pandya, citizenship]* |
 | Date of this disclosure | 2026-09-16 |
-| Date of conception | *[earliest dated record of the idea: notes, sketches, chat logs, the first commit]* |
+| Date of conception | *[27th August 2026]* |
 | Earliest public disclosure | *[when this repository became public, if it is; any demo, post, or conversation with someone not under confidentiality]* |
 | Reduction to practice | Software prototype confirmed working by the inventor via live microphone test. Hardware not yet built. No real calibration data collected yet. See §3.6. |
 
