@@ -7,7 +7,7 @@ Fill in the bracketed fields before sharing it.
 
 | | |
 |---|---|
-| Inventor(s) | *[legal name, address, citizenship]* |
+| Inventor(s) | *[Mannan Vishal Pandya, citizenship]* |
 | Date of this disclosure | 2026-09-16 |
 | Date of conception | *[earliest dated record of the idea: notes, sketches, chat logs, the first commit]* |
 | Earliest public disclosure | *[when this repository became public, if it is; any demo, post, or conversation with someone not under confidentiality]* |
