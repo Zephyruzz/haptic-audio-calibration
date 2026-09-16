@@ -5,3 +5,6 @@ __pycache__/
 # survey data - not for the repo
 phase0_friends_survey.html
 *survey*response*
+
+# validate_calibration.py keeps the previous active profile here when swapping a new one in
+calibration_profile.backup*.json

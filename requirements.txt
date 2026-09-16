@@ -1,0 +1,8 @@
+# Python dependencies for the Phase 1 prototype (haptic_prototype.py) and the tests.
+# validate_calibration.py needs only the standard library.
+# The firmware under firmware/ runs on CircuitPython and gets its libraries from the
+# CircuitPython Library Bundle instead (see docs/hardware-setup.md).
+
+numpy>=1.24          # FFT and array maths; the tests need only this
+sounddevice>=0.4.6   # live microphone capture; needs the PortAudio system library at runtime
+                     # (bundled in the macOS and Windows wheels; on Linux: sudo apt install libportaudio2)
