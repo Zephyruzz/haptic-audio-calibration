@@ -51,18 +51,30 @@ Two layers are kept apart everywhere in the code:
 | **2. Hardware** | Buy and wire the solder-free build (QT Py + DRV2605L + ERM disc), run the firmware, feel the patterns; then write the serial bridge and tune the actuator layer. | **Prep code done; hardware not purchased or wired.** |
 | **3. Evidence** (proposed) | Test-retest of the inventor's profile, profiles from other people, and an A/B comparison of personal vs generic mapping. This is what a patent filing would need. | **Not started.** |
 
-## Running the prototype
+## Getting started
+
+Fresh machine, nothing installed yet:
 
 ```bash
+git clone https://github.com/Zephyruzz/haptic-audio-calibration.git
+cd haptic-audio-calibration
 python -m venv venv
 source venv/bin/activate          # Windows: venv\Scripts\activate
-pip install numpy sounddevice
-python haptic_prototype.py        # Ctrl+C to stop; --profile PATH to try another profile
+pip install -r requirements.txt   # numpy + sounddevice
+python -m unittest                # 1. prove the pipeline logic with synthetic tones (no mic needed)
+python haptic_prototype.py        # 2. live: Ctrl+C to stop; --profile PATH to try another profile
 ```
+
+On Linux, `sounddevice` also needs the PortAudio system library
+(`sudo apt install libportaudio2` on Debian/Ubuntu). macOS and Windows wheels bundle it.
+If the prototype exits with "Could not load the audio backend", that is the missing piece;
+the tests still run without it.
 
 Play music, talk, or hum near the microphone and watch the terminal print the dominant
 frequency, its haptic pattern, and its calibrated feeling in real time. The first lines
-tell you which profile is loaded and warn if it is still the placeholder.
+tell you which profile is loaded and warn if it is still the placeholder. When you have
+your own profile, see [Swapping in a real profile](#swapping-in-a-real-profile); for the
+hardware build, see [`docs/hardware-setup.md`](docs/hardware-setup.md).
 
 ## Tests
 
